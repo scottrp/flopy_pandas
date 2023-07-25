@@ -1,0 +1,51 @@
+name: flopy
+channels:
+  - conda-forge
+dependencies:
+  # required
+  - python>=3.8
+  - numpy>=1.15.0
+  - matplotlib>=1.4.0
+
+  # lint
+  - black
+  - flake8
+  - isort
+  - pylint
+
+  # test
+  - coverage
+  - flaky
+  - filelock
+  - jupyter
+  - jupytext
+  - pip
+  - pip:
+      - modflow-devtools
+  - pytest
+  - pytest-benchmark
+  - pytest-cases
+  - pytest-cov
+  - pytest-dotenv
+  - pytest-xdist
+
+
+  # optional
+  - python-dateutil>=2.4.0
+  - affine
+  - scipy
+  - pandas
+  - netcdf4
+  - pyshp
+  - rasterio
+  - fiona
+  - descartes
+  - pyproj
+  - shapely>=1.8
+  - geos
+  - geojson
+  - vtk
+  - rasterstats
+
+  # MODFLOW API dependencies
+  - bmipy
